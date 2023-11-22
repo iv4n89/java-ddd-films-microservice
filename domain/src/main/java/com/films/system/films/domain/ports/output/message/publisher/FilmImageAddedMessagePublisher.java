@@ -1,0 +1,6 @@
+package com.films.system.films.domain.ports.output.message.publisher;
+
+import com.films.system.common.domain.events.publisher.DomainPublisher;
+import com.films.system.films.domain.events.FilmImageAddedEvent;
+
+public interface FilmImageAddedMessagePublisher extends DomainPublisher<FilmImageAddedEvent> {}

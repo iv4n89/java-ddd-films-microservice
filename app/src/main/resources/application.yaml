@@ -1,0 +1,25 @@
+#file: noinspection undefined
+spring:
+  application:
+    name: service-films
+  config:
+    import: "optional:configserver:"
+
+server:
+  port: ${PORT:0}
+
+logging:
+  level:
+    com.films.system: DEBUG
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}        <dependency>
+            <groupId>org.springframework.plugin</groupId>
+            <artifactId>spring-plugin-core</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
