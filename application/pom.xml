@@ -17,8 +17,8 @@
             <artifactId>domain</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.films.system</groupId>
-            <artifactId>common</artifactId>
+            <groupId>com.github.iv4n89</groupId>
+            <artifactId>java-ddd-films-common</artifactId>
         </dependency>
         <dependency>
             <groupId>com.films.system</groupId>

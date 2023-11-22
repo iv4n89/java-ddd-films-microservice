@@ -27,6 +27,7 @@
     <properties>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
         <project.version>1.0-SNAPSHOT</project.version>
+        <common.version>0.1</common.version>
         <spring-cloud.version>2022.0.4</spring-cloud.version>
     </properties>
 
@@ -43,9 +44,9 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.films.system</groupId>
-                <artifactId>common</artifactId>
-                <version>${project.version}</version>
+                <groupId>com.github.iv4n89</groupId>
+                <artifactId>java-ddd-films-common</artifactId>
+                <version>${common.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.films.system</groupId>
@@ -128,5 +129,12 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
 
 </project>

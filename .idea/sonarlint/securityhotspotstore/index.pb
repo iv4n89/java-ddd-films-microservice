@@ -93,3 +93,7 @@ Zapplication/src/test/java/com/films/system/films/application/usecases/FilmDelet
 Ndomain/src/test/java/com/films/system/films/domain/FilmCreatedEventMother.java,6/1/61a44f17c962b0326290e89b863d954fbd7c4dce
 >
 domain/pom.xml,8/b/8b11330a6810846535e4b5ba2024ccfcee112862
+F
+infrastructure/pom.xml,2/b/2bb83dd43ff74bd2017133cd9dea6897cfe43de3
+A
+messaging/pom.xml,3/6/36c46830e58f26a5644214f9e8c4d594070ec7ad
