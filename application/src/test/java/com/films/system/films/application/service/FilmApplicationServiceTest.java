@@ -35,7 +35,7 @@ import java.util.UUID;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class FilmApplicationServiceTest {
+class FilmApplicationServiceTest {
 
     private FilmApplicationServiceImpl filmApplicationService;
 
