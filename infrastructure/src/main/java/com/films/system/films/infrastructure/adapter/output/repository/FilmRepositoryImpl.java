@@ -58,7 +58,10 @@ public class FilmRepositoryImpl implements FilmRepository {
         filmJpaRepository
             .findById(filmId.getValue())
             .map(filmsMapper::filmEntityToFilm)
-            .orElseThrow();
+            .orElseThrow(
+                () ->
+                    new FilmNotFoundException(
+                        "Film with id: " + filmId.getValue().toString() + " could not be found"));
     film.setMeanRating(new FilmMeanRating(meanRating));
     filmJpaRepository.save(filmsMapper.filmToFilmEntity(film));
   }

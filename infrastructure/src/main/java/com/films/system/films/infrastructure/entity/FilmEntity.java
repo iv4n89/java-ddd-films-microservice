@@ -15,7 +15,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "films", schema = "film")
+@Table(name = "films")
 public class FilmEntity {
   @Id private UUID id;
   private String title;
